@@ -254,11 +254,7 @@ nav ul li a:hover i {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.profile-img:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
-    border-color: rgba(0, 255, 255, 0.6);
-}
+
 
 /* Description */
 .description {
@@ -826,46 +822,16 @@ nav ul li a:hover i {
     }
 }
 /* Flexbox example */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.flex-item {
-  flex: 1 1 300px;
-  margin: 1em;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-.profile-pic {
-  display: block;
-  margin: 0 auto;
-}
 @media (max-width: 768px) {
   .profile-img {
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 120px;
+    position: static !important;         /* Removes absolute positioning */
+    display: block;
+    margin: 20px auto !important;        /* Centers the image */
+    width: 120px !important;
+    height: 120px !important;
+    transform: none !important;          /* Cancels transform that pushes it left */
   }
 }
-.profile-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-     .profile-img {
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 120px;
-  }
-}
+
 
 
