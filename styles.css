@@ -253,7 +253,16 @@ nav ul li a:hover i {
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
+@media (max-width: 768px) {
+  .profile-img {
+    position: static !important;         /* Removes absolute positioning */
+    display: block;
+    margin: 20px auto !important;        /* Centers the image */
+    width: 120px !important;
+    height: 120px !important;
+    transform: none !important;          /* Cancels transform that pushes it left */
+  }
+}
 
 
 /* Description */
@@ -633,12 +642,6 @@ nav ul li a:hover i {
         letter-spacing: 0.1em;
     }
 
-    .profile-img {
-        width: 120px;
-        height: 120px;
-        top: 5px;
-        left: 5px;
-    }
 
     .typing-text {
         font-size: 1em;
@@ -822,16 +825,7 @@ nav ul li a:hover i {
     }
 }
 /* Flexbox example */
-@media (max-width: 768px) {
-  .profile-img {
-    position: static !important;         /* Removes absolute positioning */
-    display: block;
-    margin: 20px auto !important;        /* Centers the image */
-    width: 120px !important;
-    height: 120px !important;
-    transform: none !important;          /* Cancels transform that pushes it left */
-  }
-}
+
 
 
 
