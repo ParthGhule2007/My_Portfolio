@@ -859,6 +859,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+     .profile-img {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+  }
 }
 
 
