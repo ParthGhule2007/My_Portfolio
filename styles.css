@@ -857,4 +857,18 @@ img {
   height: auto;
   display: block;
 }
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .profile-img {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+  }
+}
+
 
