@@ -800,13 +800,7 @@ nav ul li a:hover i {
 }
 
 
-@media (max-width: 480px) {
-    .profile-img {
-        width: 120px;
-        height: 120px;
-        border-width: 2px;
-    }
-}
+
 .letter {
     animation: glow 1.5s infinite alternate;
     color: #fff;
